@@ -5,7 +5,7 @@ int	readInput(char *input)
 	int	nbytes;
 
 	nbytes = read(0, input, BUFFSIZE);
-	input[BUFFSIZE - 1] = '\0'; // NULL terminate just in case
+	input[nbytes] = '\0'; // NULL terminate just in case
 	if (nbytes < 0)
 		return (0);
 	return (1);
