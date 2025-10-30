@@ -238,5 +238,6 @@ int	main(int argc, char **argv)
 	initTab(input, tab, width, height);
 	startLifeSimulation(tab, width, height, iterations);
 	printTab(tab, height);
+	freeTab(tab, height);
 	return (0);
 }
