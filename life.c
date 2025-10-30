@@ -94,7 +94,7 @@ void	initTab(char *input, char **tab, int width, int height)
 		if (input[j] == 'x')
 			isWriting = !isWriting;
 		if (input[j] == 'w' && (i - 1) >= 0) // UP == i - 1
-			i = -1;
+			i -= 1;
 		if (input[j] == 's' && (i + 1) < height) // DOWN == i + 1
 			i += 1;
 		if (input[j] == 'a' && (y - 1) >= 0) // LEFT == y - 1
